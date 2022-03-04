@@ -19,7 +19,7 @@ jobs:
     - run: pipenv install jupyter requests bs4 --python `which python`
     - name: Run scraper
       run: pipenv run jupyter execute scrape.ipynb
-      - name: Add and commit	
+    - name: Add and commit	
       run: |-	
         git add .	
         git config user.name "Automated"	
